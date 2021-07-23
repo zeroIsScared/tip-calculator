@@ -1,0 +1,62 @@
+body {
+  background-image: url("/michael-browning-MtqG1lWcUw0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+}
+
+/*form {
+  width: 65%;
+  margin: auto;
+} */
+
+input,
+select {
+  border-radius: 10px;
+  height: 25px;
+  background-color: rgba(243, 203, 180, 0.932);
+  color: rgb(68, 38, 2);
+  text-align: center;
+  border: rgba(78, 92, 1, 0.747);
+
+  font-family: fantasy;
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+label,
+p {
+  color: rgba(243, 203, 180, 0.932);
+  font-family: cursive;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+strong {
+  font-size: 25px;
+  color: white;
+}
+
+input:hover,
+select:hover {
+  background-color: thistle;
+}
+
+#calculator {
+  float: right;
+  width: 30%;
+  height: 370px;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 15%;
+  background-color: rgba(15, 15, 15, 0.918);
+}
+
+#calculate {
+  display: block;
+  width: 30%;
+  margin: auto;
+  font-size: 18px;
+}
