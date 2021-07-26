@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tipCalculator1.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+   <!--    Create a project that will allow you to calculate the Tip for the waitress in a restaurant.
+You should include a HTML file, a CSS file and a JS file.
+
+Your project should allow the end user to enter:
+- The total bill amount (textbox)
+- The Service level: Outstanding-30%, Good-20%, OKish-15%, Bad - 10%, Never coming back - 0% (radio buttons)
+- The number of persons that are splitting the bill (dropdown with values from 1 to 10)
+
+Your project should have a button Calculate that will return the Tip value for each person based on next calculation:
+(TotalBillAmount * ServiceLevel)/NumberOfPersons
+   -->
+ 
+  <div class="calculator">
+    <h1>Tip Calculator</h1>
+
+      <form id="form">
+
+        <div class="bill section">
+          <label for="bill">Total bill amount:</label>
+          <input type="number" name="bill" id="bill" min='1' placeholder="Enter the bill amount" required>
+        </div>
+      
+        <div class="radio section">
+          <h3>Appreciate the service level:</h3>
+          <input type="radio" name="service" value="0.3" id="service-0.3"> 
+          <label for="service-0.3">Outstanding-30%</label><br>
+          <input type="radio" name="service" value="0.2" id="service-0.2"> 
+          <label for="service-0.3">Good-20%</label><br>
+          <input type="radio" name="service" value="0.15" id="service-0.15"> 
+          <label for="service-0.15">OKish-15%</label><br>
+          <input type="radio" name="service" value="0.1" id="service-0.10"> 
+          <label for="service-0.15">Bad - 10%</label><br>
+          <input type="radio" name="service" value="0" id="service-0"> 
+          <label for="service-0">Never coming back - 0%</label>
+        </div>
+         
+        <div class= "nrPersons section">
+           <label for="persons" id="persons">How many persons will share the bill?</label>
+           <input type="number" name="persons" id='numPer' min="1" max="10" required>
+        </div>
+        
+        <div class="button section">
+           <input type="button" id="calculate" name="button" value="Calculate">
+        </div>
+
+      </form>
+
+      <div class ="result">
+          <h3> The tip for each person will be: <strong id='tip'></strong> MDL
+          </h3>
+      </div>
+
+  </div>
+<script src="/tipCalculator1.js"></script>
+</body>
+</html>

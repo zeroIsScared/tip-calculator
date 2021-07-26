@@ -1,0 +1,60 @@
+body {
+  color: rgb(29, 86, 109);
+  background-image: url("/dan-burton-z-RS88-pjtc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position-x: -400px;
+  background-position-y: -200px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.calculator {
+  background-color: rgba(216, 212, 212, 0.884);
+  width: 25%;
+  height: auto;
+  float: right;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.section {
+  padding-bottom: 20px;
+  margin: 20px;
+}
+
+#numPer {
+  border-radius: 5px;
+  border: solid 1px rgb(29, 86, 109);
+}
+
+#numPer:hover {
+  background-color: grey;
+}
+
+#calculate:hover {
+  background-color: grey;
+}
+
+#bill:hover {
+  background-color: grey;
+}
+
+#calculate {
+  display: block;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  border: solid 1px rgb(29, 86, 109);
+  background-color: rgb(114, 158, 179);
+  height: 30px;
+}
+
+#bill {
+  border-radius: 5px;
+  border: solid 1px rgb(29, 86, 109);
+}
